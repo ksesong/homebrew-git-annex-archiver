@@ -1,8 +1,8 @@
 class GitAnnexArchiver < Formula
   desc "Coordinates typical git-annex routines."
   homepage "https://github.com/ksesong/git-annex-archiver"
-  url "https://github.com/ksesong/git-annex-archiver/archive/refs/tags/v0.1.2.tar.gz"
-  sha256 "558d9e1ee31570a4203df9ad801b7428d6936e28e9f83048fd58b0ad5c4110cd"
+  url "https://github.com/ksesong/git-annex-archiver/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "529854bf3df722e6eb451070fd7cdd31a1df1c5c1b5b883628184b6a93cef998"
 
   depends_on "rust" => :build
 
@@ -19,6 +19,6 @@ class GitAnnexArchiver < Formula
   end
 
   test do
-    assert_equal "version: 0.1.2", shell_output("#{bin}/git-annex-archiver --version").strip
+    assert_equal "version: 0.2.0", shell_output("#{bin}/git-annex-archiver --version").strip
   end
 end
